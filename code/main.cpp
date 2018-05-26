@@ -33,7 +33,7 @@ int main(){
 	cout<<"Indique la cantidad variable unitaria: ";
 	cin>>cantidadVariableUnitaria;
 	
-	cout<<"Indique el precio al público del producto: ";
+	cout<<"Indique el precio al pÃºblico del producto: ";
 	cin>>precioVentaOrdenador;
 	
 	if (cantidaddeproductos == 0 ){
@@ -42,6 +42,7 @@ int main(){
 	else {
 		obtenerBeneficio(cantidadFijaUnitaria, cantidadVariableUnitaria, precioVentaOrdenador, cantidaddeproductos);
 	}
+	
 	getch();
 	return 0;
 }
