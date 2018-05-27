@@ -3,22 +3,8 @@
 
 using namespace std;
 
-void obtenerBeneficio(float cantFija, float cantVariable, float precioventa, float cantproductos){
-		
-	int resultado = 0;
-		
-	resultado = (precioventa - cantVariable) * cantproductos - cantFija;
-	cout<<"\nTu Beneficio va a ser de: " << resultado <<" $. Por vender "<<cantproductos<<" uds."<<endl;
-}
-
-void obtenerUnidades(float cantFija, float cantVariable, float precioventa){
-	
-	int resultado = 0;
-	
-	resultado = cantFija / (precioventa - cantVariable);
-	cout<<"Tienes que vender " << resultado << "uds. Para tener un beneficio 0";
-	
-}
+void obtenerBeneficio(float , float , float , float );
+void obtenerUnidades(float , float, float );
 
 int main(){
 	
@@ -42,7 +28,23 @@ int main(){
 	else {
 		obtenerBeneficio(cantidadFijaUnitaria, cantidadVariableUnitaria, precioVentaOrdenador, cantidaddeproductos);
 	}
-	
 	getch();
 	return 0;
+}
+
+void obtenerBeneficio(float cantFija, float cantVariable, float precioventa, float cantproductos){
+		
+	int resultado = 0;
+		
+	resultado = (precioventa - cantVariable) * cantproductos - cantFija;
+	cout<<"\nTu Beneficio va a ser de: " << resultado <<" $. Por vender "<<cantproductos<<" uds."<<endl;
+}
+
+void obtenerUnidades(float cantFija, float cantVariable, float precioventa){
+	
+	int resultado = 0;
+	
+	resultado = cantFija / (precioventa - cantVariable);
+	cout<<"Tienes que vender " << resultado << "uds. Para tener un beneficio 0";
+	
 }
